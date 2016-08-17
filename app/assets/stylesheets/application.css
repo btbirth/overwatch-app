@@ -28,6 +28,6 @@
  	padding-left:5;
  	padding-right:0;
  }
- #chooser{
- 	align-content: center;
+ .dark{
+ 	background-color: rgb(50,50,50);
  }
