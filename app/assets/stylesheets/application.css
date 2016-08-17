@@ -16,4 +16,18 @@
 
  body {
  	margin-top: 60px;
+ 	background-color: darkgray;
+ }
+
+ .name-tag{
+ 	color: silver;
+ 	background-color: black;
+ 	text-align: center;
+ }
+ .close-icon{
+ 	padding-left:5;
+ 	padding-right:0;
+ }
+ #chooser{
+ 	align-content: center;
  }

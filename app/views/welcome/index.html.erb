@@ -1,2 +1,35 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div class = "container">
+	<div class = "jumbotron name-tag">
+		<i class = "name-tag"><h1><%= @data["data"]["username"] %></h1>
+		<h3>Level <%= @data["data"]["level"] %></h3></i>
+	</div>
+
+		<%= render 'welcome/hero_icons' %>
+
+
+	<!-- Show player stats indepth -->
+	<div class = "row">
+		<div class = "col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Quick Play</h3>
+				</div>
+			  	<div class="panel-body">
+			    	<i><strong> WINS: </strong><%= @data["data"]["games"]["quick"]["wins"] %></i><br>
+			    	<i><strong>LOSES: </strong><%= @data["data"]["games"]["quick"]["lost"] %></i>
+				</div>
+			</div>
+		</div>
+		<div class = "col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Competitive Play</h3>
+				</div>
+			  	<div class="panel-body">
+			    	<i><strong> WINS: </strong><%= @data["data"]["games"]["competitive"]["wins"] %></i><br>
+			    	<i><strong>LOSES: </strong><%= @data["data"]["games"]["competitive"]["lost"] %>				</div>
+			</div>		
+		</div>
+	</div>
+
+</div>
