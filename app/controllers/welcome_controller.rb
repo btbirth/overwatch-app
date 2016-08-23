@@ -14,7 +14,9 @@ class WelcomeController < ApplicationController
 
   	# response = RestClient.get(url)
   	# @data = JSON.parse(response)
-  
+
+
+
 
  
   end
