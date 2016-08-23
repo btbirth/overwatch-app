@@ -29,4 +29,8 @@
  }
  .dark{
  	background-color: rgb(50,50,50);
+ 	color:lightgray;
  }
+ .center-me{
+ 	text-align: center;
+}
