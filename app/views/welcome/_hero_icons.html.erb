@@ -2,31 +2,15 @@
 	<div class="row">
 		<% @heroes.each do |hero| %>
 			<div class="col-xs-6 col-md-1 close-icon" >
-				<a href="#" data-toggle="modal" class="thumbnail" data-target="#myModal_<%= hero.id %>">
+				<div class="thumbnail"><%= link_to hero_path(hero) do %>
 					<%= image_tag src=hero.icon %>
-				</a>
+				<%end%>
+					
+				</div>				
 			</div>
 
-			<!-- Modal -->
-			<div class="modal fade" tabindex="-1" role="dialog" id="myModal_<%= hero.id %>">
- 				<div class="modal-dialog" role="document">
-		    		<div class="modal-content dark">
-						<div class="modal-header">
-							<i><h2 class = "center-me"><%= hero.name %></h2></i>
-						</div>
-						<div class="modal-body">
-							<h4>Quick Play</h4>
-							ELIMINATIONS: <%=  %>
-							<hr>
-							<h4>Competitive Play</h4>
-							ELIMINATIONS: <%=  %>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div><!-- /.modal-content -->
-				</div><!-- /.modal-dialog -->
-			</div>
+
+
 		<%end%>
 	</div>
 </div>

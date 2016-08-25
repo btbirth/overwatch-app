@@ -27,3 +27,4 @@ Hero.create("name"=>"Lucio","icon"=>"http://www.mmo-town.com/wp-content/uploads/
 Hero.create("name"=>"Mercy","icon"=>"http://www.mmo-town.com/wp-content/uploads/2016/03/mercy-profile-icon.png")
 Hero.create("name"=>"Symmetra","icon"=>"http://www.mmo-town.com/wp-content/uploads/2016/03/symmetra-profile-icon.png")
 Hero.create("name"=>"Zenyatta","icon"=>"http://www.mmo-town.com/wp-content/uploads/2016/03/zenyatta-profile-icon.png")
+Hero.

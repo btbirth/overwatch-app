@@ -3,11 +3,12 @@
 	<div class = "jumbotron name-tag">
 		<div class = "row">
 			<div class = "col-md-2">
-			<%= image_tag avatar_url(current_user) %>
+			
+			<%=image_tag @data["data"]["avatar"] %>
 			</div>		
 			<div class = "col-md-10">			
 				<i class = "name-tag"><h1><%= @user.tag %></h1>
-				<h3>Level: 30 </h3></i>
+				<h3> <%= @data["data"]["level"] %> </h3></i>
 			</div>
 		</div>
 	</div>
@@ -16,5 +17,10 @@
 	<%= render 'welcome/stat_windows' %> 
 <!-- Partial displays all hero icons-->
 	<%= render 'welcome/hero_icons' %>
+
+	<div class = "jumbotron name-tag"> 
+		<%= link_to '<button type="button">Create Team</button>'.html_safe, new_team_path %>
+
+	<div>
 
 </div>
