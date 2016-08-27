@@ -1,1 +1,16 @@
-MAke form here
+
+<div class = "container">
+	<div class = "jumbotron name-tag">
+		<h2> Create Your Fantasy team </h2>
+	</div>
+<div class = "row">	
+	<div class = "col-md-4">
+		<div class="panel panel-default">
+			<%= simple_form_for @team do |f| %>
+				<%= f.input :name %>
+				<%= f.button :submit, :class => 'btn-primary' %>
+			<%end%>	
+			</div>
+		</div>
+	</div>
+</div>
