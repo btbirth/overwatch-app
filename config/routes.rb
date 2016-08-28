@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
 
   resources :heros
+  resources :teams
   
   get 'hero/show'
   get 'team/new'
@@ -10,7 +11,6 @@ Rails.application.routes.draw do
   get 'team/show'
   get 'team/add'
   get 'team/remove'
-  resources :teams
   devise_for :users, :controllers => { registrations: 'registrations' }
 
 

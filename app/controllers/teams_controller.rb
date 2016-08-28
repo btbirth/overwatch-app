@@ -20,7 +20,7 @@ class TeamsController < ApplicationController
   end
 
   def show
-   
+    @team = Team.find(user_id: current_user.id)
   end
 
   def add
