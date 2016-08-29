@@ -19,8 +19,11 @@
 	<%= render 'welcome/hero_icons' %>
 
 	<div class = "jumbotron name-tag"> 
-		<%= link_to '<button type="button">Create Team</button>'.html_safe, new_team_path %>
-		<%= link_to '<button type="button">View Team</button>'.html_safe, team_show_path %>
+		<%if Team.exists?(user_id: current_user.id) == false%>
+			<%= link_to '<button type="button">Create Team</button>'.html_safe, new_team_path %>
+		<%else%>
+			<%= link_to '<button type="button">View Team</button>'.html_safe, teams_show_path %>
+		<%end%>
 	<div>
 
 </div>

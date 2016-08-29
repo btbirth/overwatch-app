@@ -5,6 +5,7 @@ class HerosController < ApplicationController
 		response = RestClient.get(url)
   		@data = JSON.parse(response)
 		
+
 	end
 
 	private

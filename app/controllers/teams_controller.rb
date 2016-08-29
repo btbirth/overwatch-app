@@ -13,14 +13,16 @@ class TeamsController < ApplicationController
       @team.user_id = current_user.id
       @team.save
       end   
-      redirect_to team_show_path
+      redirect_to teams_show_path
     else
       render :new
     end
   end
 
   def show
-    @team = Team.find(user_id: current_user.id)
+    @team = Team.where(user_id: current_user.id)
+    @users = User.all
+    @user
   end
 
   def add

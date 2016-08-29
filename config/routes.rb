@@ -6,11 +6,11 @@ Rails.application.routes.draw do
   resources :teams
   
   get 'hero/show'
-  get 'team/new'
-  get 'team/create'
-  get 'team/show'
-  get 'team/add'
-  get 'team/remove'
+  get 'teams/new'
+  get 'teams/create'
+  get 'teams/show'
+  get 'teams/add'
+  get 'teams/remove'
   devise_for :users, :controllers => { registrations: 'registrations' }
 
 

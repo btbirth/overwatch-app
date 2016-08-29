@@ -1,2 +1,26 @@
-<h1>Team#show</h1>
-<p>Find me in app/views/team/show.html.erb</p>
+<div class = "container">
+	<div class = "jumbotron name-tag center-me">
+		<h2><i><b>Team : <%= @team[0].name %></b></i></h2>			
+	</div>
+	<!-- Team roster -->
+	<div class = "jumbotron">
+		<div class = "row">
+			<% @team.each do |member| %>
+				<div class = "col-md-2">
+					<div class = "panel">
+						<% if member.member_id == nil %>
+							<b>No TEAMATE</b>
+							<%= render 'teams/modal' %>
+						<% else %>
+
+							<b><%= @users.find(member.id).tag %></b>
+						<%end%>										
+					</div>
+				</div>
+			<%end%>											
+		</div>
+	</div>
+	<!-- Player list to add new players -->
+
+</div>
+
