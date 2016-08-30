@@ -26,6 +26,10 @@ class TeamsController < ApplicationController
   end
 
   def add
+    binding.pry
+  end
+  def edit
+    
   end
 
 
